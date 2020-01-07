@@ -1,5 +1,7 @@
 package podstawy;
 
+import java.math.*;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -11,11 +13,16 @@ public class Main {
 		int z = 1;
 		double dWartosc = 3.14;
 		
-		int y = (int)dWartosc;							//zmiana typu
+		int y = (int)dWartosc;							//rzutowanie
 		double dZmiana = z;
 		
+		int iSin = (int)Math.asin(Math.PI);
 		
-		System.out.println("Hello World");
+		z = sLancuch.length();
+		
+		
+		System.out.println(sLancuch+ " " + z);
+		System.out.println(iSin);
 		System.out.println(dWartosc + "; " + y + "; " + dZmiana);
 
 		
